@@ -10,6 +10,7 @@ import BulletList from "@tiptap/extension-bullet-list";
 import OrderedList from "@tiptap/extension-ordered-list";
 import { useState } from "react";
 import Preview from "./preview";
+import ImageResize from "tiptap-extension-resize-image";
 
 export default function RichTextEditor({ content, onChange }) {
     const [htmlContent, setHtmlContent] = useState(content);
@@ -36,6 +37,7 @@ export default function RichTextEditor({ content, onChange }) {
             }),
             Highlight,
             Image,
+            ImageResize,
         ],
         content: content,
         editorProps: {

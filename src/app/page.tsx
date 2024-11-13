@@ -45,7 +45,8 @@ export default function Home() {
 
     return (
         <div className="max-w-3xl mx-auto py-5">
-            <Form {...form}>
+            
+              <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}>
                     <FormField
                         control={form.control}
